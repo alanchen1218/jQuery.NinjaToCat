@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ninja to Cat</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){ 
+			$("#image1").click(function(){ if($("#image1").attr("src") == "ninja0.png"){
+				$(this).attr("src", "cat0.png");
+				}
+				else if($("#image1").attr("src") == "cat0.png"){
+				$(this).attr("src", "ninja0.png")
+				} 
+			});
+
+
+			$("#image2").click(function(){ if($("#image2").attr("src") == "ninja1.png"){
+				$(this).attr("src", "cat1.png");
+				}
+				else if($("#image2").attr("src") == "cat1.png"){
+				$(this).attr("src", "ninja1.png")
+				} 
+			});
+
+			$("#image3").click(function(){ if($("#image3").attr("src") == "ninja2.png"){
+				$(this).attr("src", "cat2.png");
+				}
+				else if($("#image3").attr("src") == "cat2.png"){
+				$(this).attr("src", "ninja2.png")
+				} 
+			});
+
+			$("#image4").click(function(){ if($("#image4").attr("src") == "ninja3.png"){
+				$(this).attr("src", "cat3.png");
+				}
+				else if($("#image4").attr("src") == "cat3.png"){
+				$(this).attr("src", "ninja3.png")
+				} 
+			});
+
+
+			$("#image5").click(function(){ if($("#image5").attr("src") == "ninja4.png"){
+				$(this).attr("src", "cat4.png");
+				}
+				else if($("#image5").attr("src") == "cat4.png"){
+				$(this).attr("src", "ninja4.png")
+				} 
+			});
+
+
+
+		});
+	</script>
+</head>
+<body>
+	<h1>Ninja to Cat!</h1>	
+	<div class="border">
+		<img id="image1" src="ninja0.png" alt ="backup">
+		<img id="image2" src="ninja1.png" alt ="backup">
+		<img id="image3" src="ninja2.png" alt ="backup">
+		<img id="image4" src="ninja3.png" alt ="backup">
+		<img id="image5" src="ninja4.png" alt ="backup">
+	</div>
+</body>
+</html>
